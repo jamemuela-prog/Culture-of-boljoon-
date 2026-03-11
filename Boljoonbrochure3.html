@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Boljoon Tourism</title>
+
+<style>
+body{
+font-family: Arial;
+text-align:center;
+background-image:url("content://media/external/downloads/1000022390");
+background-size:cover;
+color:white;
+padding:100px;
+}
+
+.box{
+background:rgba(0,0,0,0.7);
+padding:40px;
+border-radius:10px;
+}
+
+h1{
+color:#ffd700;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Contact Information</h1>
+
+<p><b>Boljoon Tourism Office</b></p>
+
+<p>Location: Poacion Boljoon, Cebu, Philippines</p>
+
+<p>Email: boljoontourism@gmail.com</p>
+
+<p>Visit Boljoon and discover the beauty of Cebu's cultural heritage.</p>
+
+</div>
+                      <body>
+<script>
+// List of pages to loop
+const pages = ["BoljoonBrochure.html", "inside.html", "back.html"];
+
+// Time to show each page (in milliseconds)
+const displayTime = 15000; // 5000ms = 1 minute
+
+// Get current page
+let currentIndex = pages.indexOf(window.location.pathname.split("/").pop());
+
+// Calculate next page
+setTimeout(() => {
+    let nextIndex = (currentIndex + 1) % pages.length;
+    window.location.href = pages[nextIndex];
+}, displayTime);
+</script>
+</body>
+</body>
+</html>
